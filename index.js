@@ -137,9 +137,9 @@ class XKeys extends EventEmitter {
 			// Device not provided, will then select any connected device:
 			const connectedXKeys = devices.filter(device => {
 
-				// Ensures device with usage 1 is selected (other usage "id's" do not seem to work)
+				// Ensures device with interface 0 is selected (other interface "id's" do not seem to work)
 
-				return (device.vendorId === XKeys.vendorId && device.usage === 1);
+				return (device.vendorId === XKeys.vendorId && device.interface === 0);
 			});
 			if (!connectedXKeys.length) {
 				throw new Error("Could not find any connected X-keys panels.");

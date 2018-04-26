@@ -25,7 +25,7 @@ if (devices.length) {
 	var filteredDevices = devices.filter((device) => {
 
 
-		return (device.vendorId === 1523 && device.usage === 1); // xkeys
+		return (device.vendorId === 1523 && device.interface === 0); // xkeys
 	});
 
 	var deviceNo = 0;
@@ -41,7 +41,7 @@ if (devices.length) {
 		log('product       ',device.product);
 		log('vendorId      ',device.vendorId);
 		log('productId     ',device.productId);
-		log('usage         ',device.usage);
+		log('interface     ',device.interface);
 		//log(device);
 
 
