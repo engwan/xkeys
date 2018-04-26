@@ -110,9 +110,9 @@ if (connectedXKeys.length) {
 
 // Examples:
 // Light up the green LED
-.setBacklight(0, true);
+.setLED(0, true);
 // Light up the red LED
-.setBacklight(1, true);
+.setLED(1, true);
 ```
 
 #### Set backlight intensity
