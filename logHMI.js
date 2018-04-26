@@ -1,3 +1,5 @@
+"use strict";
+
 const HID = require('node-hid');
 const fs = require('fs');
 const EventEmitter = require('events');
